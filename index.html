@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Practice</title>
+        <style>
+            body {
+                background: url("https://s4827.pcdn.co/wp-content/uploads/2018/07/jeff-l-735108-unsplash.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                color:rgb(53, 48, 48);
+            }
+
+            .box {
+                color:white;
+                background-color:black;
+                border: solid 1px black;
+                width: min-content;
+                padding: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 250px;
+            }
+
+            .input-text {
+                height: 32px;
+                width: 250px;
+            }
+
+            .btn{
+
+                padding:12px;
+                background-color:orange;
+                color:white;
+                border-radius:5px;
+
+            }
+            .title{
+                color:orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1 class="title">PIZZA ORDER</h1>
+            <form method=PAST>
+                <p>Name:<input type="text" name="name" ></p>
+
+                <p>Pizza Topping</p>
+                <input type="radio" name="topping" value="Supreme">Supreme
+                <br>
+                <input type="radio" name="topping" value="Vegetarian">Vegetarian
+                <br>
+                <input type="radio" name="topping" value="Hawaiian">Hawaiian
+                <br>
+                <P>Pizza Source</P>
+                 <select name="pizza sauce">
+                    <option with="Tomato">Tomato</option>
+                    <option with="Barbeque">Barbeque</option>
+                    <option with="Secret Sauce">Secret Sauce</option>
+                </select>
+                <p>Optional Extras:</p>
+                <input type="checkbox" name="extra" value="Extra Chesse">Extra Cheese
+                <br>
+                <input type="checkbox" name="extra" value="Gluten Free Base">Gluten Free base
+                <p>Delivery instructions</p>
+                <textarea name="comment"></textarea>
+                <br>
+                <input class="btn" type="submit" name="send" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
